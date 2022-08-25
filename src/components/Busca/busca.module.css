@@ -1,0 +1,22 @@
+.busca {
+    width: 85%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    width: 90%;
+    height: 100%;
+    background-color: #222222;
+    border-radius: 20px;
+    border: 2px solid #555555;
+    /* padding-left: 1rem; */
+    color: #DDDDDD;
+}
+
+
+::placeholder {
+    color: #DDDDDD;
+}

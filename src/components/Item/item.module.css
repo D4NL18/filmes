@@ -1,0 +1,26 @@
+.item {
+    width: 12rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    border: 0 solid black;
+}
+
+
+.ItemBox {
+    background-color: red;
+    height: 60%;
+    width: 95%;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    color: white;
+    height: 10%;
+}
