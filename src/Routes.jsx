@@ -9,7 +9,7 @@ function Router() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<MovieList />} /> 
-          <Route exact path="/descricao" element={<Descricao />} /> 
+          <Route exact path="/descricao/:id" element={<Descricao />} /> 
         </Routes>
       </BrowserRouter>
     </div>

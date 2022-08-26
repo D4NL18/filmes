@@ -7,9 +7,9 @@ export default function Posts({ posts }) {
             {posts.map((val, key) => {
                 return (
                     <Item
-                        text={val.title}
+                        properties={val}
                         key={key}
-                        path={val.poster_path} />
+                        />
                 )
             })}
         </div>

@@ -15,6 +15,8 @@ export default function PaginationComponent({ setPage, totalPages }) {
             count={totalPages}
             shape="rounded"
             onChange={(e) => handleChange(e.target.textContent)}
-            className={Styles.pagination} />
+            className={Styles.pagination}
+            color="primary"
+            />
     )
 }

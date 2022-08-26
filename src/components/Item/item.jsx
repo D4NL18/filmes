@@ -2,14 +2,14 @@ import Styles from './item.module.css'
 
 export default function Item(props) {
     return (
-        <a className={Styles.item} href="/descricao" >
+        <a className={Styles.item} href={`/descricao/${props.properties.id}`} >
             <img
                 className={Styles.ItemBox}
-                src={`https://image.tmdb.org/t/p/original/${props.path}`}
+                src={`https://image.tmdb.org/t/p/original/${props.properties.poster_path}`}
             />
             <h3 className={Styles.title}>
-                {props.text}
+                {props.properties.title}
             </h3>
-        </a>
+        </a >
     )
 }
