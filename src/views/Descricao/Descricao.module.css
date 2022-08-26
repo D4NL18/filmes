@@ -5,20 +5,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0;
+
 }
 
 .title {
     font-size: 4rem ;
     color: white;
     text-align: center;
-    
+    margin: 3rem 1rem;
 }
 
 .body {
@@ -26,14 +27,9 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 60%;
-}
-
-.secaoImg {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    margin: 0.5rem 0;
+    width: 80%;
+    height: 80%;
+    margin-bottom: 3rem;
 }
 
 .secaoTextos {
@@ -48,11 +44,47 @@
 
 
 .imagem {
-    width: 50%;
+    width: 300px;
 }
 
 .texto {
     color: white;
     font-size: 1.2rem;
-    width: 60%;
+    width: 100%;
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .title {
+        font-size: 3rem;
+    }
+    .imagem {
+        width: 275px;
+    }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    .title {
+        font-size: 2.25rem;
+    }
+    .imagem {
+        width: 225px;
+    }
+    .texto {
+        font-size: 1.125rem;
+    }
+}
+@media only screen and (max-width: 424px) {
+    .title {
+        font-size: 2.25rem;
+    }
+    .imagem {
+        width: 225px;
+    }
+    .texto {
+        font-size: 1.125rem;
+    }
+}
+@media only screen and (max-height: 425px) {
+    
 }

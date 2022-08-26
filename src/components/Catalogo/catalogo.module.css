@@ -5,3 +5,16 @@
     width: 90%;
     overflow-x: hidden;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    
+}
+@media only screen and (max-width: 424px) {
+    
+}
+@media only screen and (max-height: 425px) {
+    
+}

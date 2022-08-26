@@ -1,4 +1,5 @@
 import Styles from './Descricao.module.css'
+import Voltar from '../../components/Voltar/voltar'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
@@ -44,6 +45,7 @@ export default function Descricao() {
                     </p>
                 </section>
             </body>
+            <Voltar />
         </div>
     )
 }

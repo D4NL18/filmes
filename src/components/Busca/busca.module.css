@@ -20,3 +20,28 @@
 ::placeholder {
     color: #DDDDDD;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    
+}
+@media only screen and (max-width: 424px) {
+    .busca {
+        width: 85%;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input {
+        width: 100%;
+        padding-left: 0.5rem;
+        font-size: 0.7rem;
+    }
+}
+@media only screen and (max-height: 425px) {
+    
+}
