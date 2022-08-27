@@ -8,44 +8,58 @@ export default function Descricao() {
 
     const { id } = useParams()
     const [posts, setPosts] = useState([])
+    const [loading, setLoading] = useState(false)
+
 
     const PATH = `https://api.themoviedb.org/3/movie/${id}?api_key=0c70d0600937fa6b2433c507fd200985`
 
+    const fetchPosts = async () => {
+        const res = await axios.get(PATH)
+        setPosts(res.data)
+        setLoading(true)
+    }
+
     useEffect(() => {
-
-        const fetchPosts = async () => {
-            const res = await axios.get(PATH)
-            setPosts(res.data)
-        }
-
         fetchPosts()
     })
 
     return (
-        <div className={Styles.descricao} >
-            <header className={Styles.header}>
-                <h1 className={Styles.title}>
-                    {posts.title}
-                </h1>
-            </header>
-            <body className={Styles.body}>
-                <section className={Styles.secaoImg}>
-                    <img
-                        src={`https://image.tmdb.org/t/p/original/${posts.poster_path}`}
-                        alt="Poster"
-                        className={Styles.imagem}
-                    />
-                </section>
-                <section className={Styles.secaoTextos}>
-                    <p className={Styles.texto}>
-                        Lançamento: {posts.release_date}
-                    </p>
-                    <p className={Styles.texto}>
-                        {posts.overview}
-                    </p>
-                </section>
-            </body>
-            <Voltar />
-        </div>
+        <>
+            {loading ? (
+                <div className={Styles.descricao} >
+                    <header className={Styles.header}>
+                        <h1 className={Styles.title}>
+                            {posts.title}
+                        </h1>
+                    </header>
+                    <body className={Styles.body}>
+                        <section className={Styles.secaoImg}>
+                            <img
+                                src={`https://image.tmdb.org/t/p/original/${posts.poster_path}`}
+                                alt="Poster"
+                                className={Styles.imagem}
+                            />
+                        </section>
+                        <section className={Styles.secaoTextos}>
+                            <p className={Styles.texto}>
+                                Lançamento: {posts.release_date}
+                            </p>
+                            <p className={Styles.texto}>
+                                {posts.overview}
+                            </p>
+                        </section>
+                    </body>
+                    <Voltar />
+                </div>
+            )
+                : (
+                    <div className={Styles.descricao}>
+                        <div class="spinner-border text-light" role="status" style={{ margin: "2rem 0" }} />
+                    </div>
+                )
+
+            }
+        </>
+
     )
 }

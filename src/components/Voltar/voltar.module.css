@@ -10,9 +10,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     color: white;
 }
+
+.voltar:hover {
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .voltar {

@@ -6,6 +6,7 @@ export default function Item(props) {
             <img
                 className={Styles.ItemBox}
                 src={`https://image.tmdb.org/t/p/original/${props.properties.poster_path}`}
+                alt="Poster"
             />
             <h3 className={Styles.title}>
                 {props.properties.title}
