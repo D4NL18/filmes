@@ -1,4 +1,4 @@
-.descricao {
+.entirePage-Descricao {
     background: linear-gradient(180deg, #2D2D2D 0%, #161616 0.01%, rgba(22, 22, 22, 0.75) 100%);
     width: 100vw;
     min-height: 100vh;
@@ -8,21 +8,21 @@
     justify-content: center;
 }
 
-.header {
+.header-Descricao {
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 
-.title {
+.title-Descricao {
     font-size: 4rem ;
     color: white;
     text-align: center;
     margin: 3rem 1rem;
 }
 
-.body {
+.body-Descricao {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -34,7 +34,7 @@
 
 }
 
-.secaoTextos {
+.secaoTextos-Descricao {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -45,11 +45,11 @@
 }
 
 
-.imagem {
+.imagem-Descricao {
     width: 300px;
 }
 
-.texto {
+.texto-Descricao {
     color: white;
     font-size: 1.2rem;
     width: 100%;
@@ -58,32 +58,32 @@
 
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .title {
+    .title-Descricao {
         font-size: 3rem;
     }
-    .imagem {
+    .imagem-Descricao {
         width: 275px;
     }
 }
 @media only screen and (min-width: 425px) and (max-width: 767px) {
-    .title {
+    .title-Descricao {
         font-size: 2.25rem;
     }
-    .imagem {
+    .imagem-Descricao {
         width: 225px;
     }
-    .texto {
+    .texto-Descricao {
         font-size: 1.125rem;
     }
 }
 @media only screen and (max-width: 424px) {
-    .title {
+    .title-Descricao {
         font-size: 2.25rem;
     }
-    .imagem {
+    .imagem-Descricao {
         width: 225px;
     }
-    .texto {
+    .texto-Descricao {
         font-size: 1.125rem;
     }
 }

@@ -1,4 +1,4 @@
-.busca {
+.entireBusca {
     width: 85%;
     height: 3rem;
     display: flex;
@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-.input {
+.input-Busca {
     width: 90%;
     height: 100%;
     background-color: #222222;
@@ -28,7 +28,7 @@
     
 }
 @media only screen and (max-width: 424px) {
-    .busca {
+    .entireBusca {
         width: 85%;
         height: 2rem;
         display: flex;
@@ -36,7 +36,7 @@
         justify-content: center;
     }
 
-    .input {
+    .input-Busca {
         width: 100%;
         padding-left: 0.5rem;
         font-size: 0.7rem;

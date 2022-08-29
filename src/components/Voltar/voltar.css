@@ -1,4 +1,4 @@
-.voltar {
+.entireVoltar {
     width: 100px;
     height: 45px;
     border-radius: 20px;
@@ -14,14 +14,14 @@
     color: white;
 }
 
-.voltar:hover {
+.entireVoltar:hover {
     color: white;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
 
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .voltar {
+    .entireVoltar {
         width: 80px;
         height: 35px;
         left: 0.25rem;
@@ -29,7 +29,7 @@
     }
 }
 @media only screen and (min-width: 425px) and (max-width: 767px) {
-    .voltar {
+    .entireVoltar {
         width: 60px;
         height: 25px;
         left: 0.25rem;
@@ -37,7 +37,7 @@
     }
 }
 @media only screen and (max-width: 424px) {
-    .voltar {
+    .entireVoltar {
         width: 60px;
         height: 25px;
         left: 0.25rem;

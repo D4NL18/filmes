@@ -1,4 +1,4 @@
-.item {
+.entireItem {
     max-width: 250px;
     display: flex;
     justify-content: center;
@@ -12,18 +12,18 @@
     text-decoration: none;
 }
 
-.item:hover {
+.entireItem:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9);
     
 }
 
 
-.ItemBox {
+.itemBox-Item {
     width: 250px;
     cursor: pointer;
 }
 
-.title {
+.title-Item {
     font-size: 1rem;
     margin: 0.5rem 0;
     cursor: pointer;
@@ -37,29 +37,29 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .item {
+    .entireItem {
         max-width: 200px;
     }
     
-    .ItemBox {
+    .itemBox-Item {
         width: 200px;
     }
 }
 @media only screen and (min-width: 425px) and (max-width: 767px) {
-    .item {
+    .entireItem {
         max-width: 300px;
     }
     
-    .ItemBox {
+    .itemBox-Item {
         width: 300px;
     }
 }
 @media only screen and (max-width: 424px) {
-    .item {
+    .entireItem {
         max-width: 200px;
     }
     
-    .ItemBox {
+    .itemBox-Item {
         width: 200px;
     }
 }

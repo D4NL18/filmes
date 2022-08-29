@@ -8,8 +8,8 @@ function Router() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<MovieList />} /> 
-          <Route exact path="/descricao/:id" element={<Descricao />} /> 
+          <Route path="/" element={<MovieList />} /> 
+          <Route path="/descricao/:id" element={<Descricao />} /> 
         </Routes>
       </BrowserRouter>
     </div>

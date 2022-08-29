@@ -1,9 +1,14 @@
-import Styles from './busca.module.css'
+import React from 'react'
+import'./busca.css'
 import { useState } from 'react'
 
-export default function Catalogo(props) {
+interface IProps {
+    setSearchTerm: (searchTerm: string) => void;
+}
 
-    const [filter, setFilter] = useState("")
+export const Busca: React.FC <IProps> = (props) => {
+
+    const [filter, setFilter] = useState<string>("")
 
     function doFilter() {
         props.setSearchTerm(filter)
@@ -14,11 +19,11 @@ export default function Catalogo(props) {
     }
 
     return (
-        <div className={Styles.busca} >
+        <div className="entireBusca" >
             <input
                 type="text"
                 placeholder="Digite o filme que você está procurando..."
-                className={Styles.input}
+                className="input-Busca"
                 onKeyUp={() => {
                     handleSubmit()
                 }}
@@ -29,3 +34,5 @@ export default function Catalogo(props) {
         </div>
     )
 }
+
+export default Busca;
