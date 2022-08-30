@@ -18,16 +18,17 @@ export const Catalogo: React.FC = () => {
     const SEARCH = `https://api.themoviedb.org/3/search/movie?sort_by=popularity.desc&api_key=0c70d0600937fa6b2433c507fd200985&query=${searchTerm}&page=${page}`
 
 
-    const fetchPosts = async () => {
-        const res = await axios.get((searchTerm) ? SEARCH : PATH)
-        setPosts(res.data.results)
-        setTotalPages(res.data.total_pages)
-        setLoading(true)
-    }
+
 
     useEffect(() => {
+        const fetchPosts = async () => {
+            const res = await axios.get((searchTerm) ? SEARCH : PATH)
+            setPosts(res.data.results)
+            setTotalPages(res.data.total_pages)
+            setLoading(true)
+        }
         fetchPosts()
-    }, [posts])
+    }, [PATH, SEARCH, searchTerm])
 
     return (
         <div className="entireCatalogo">
