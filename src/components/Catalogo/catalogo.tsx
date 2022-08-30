@@ -27,7 +27,7 @@ export const Catalogo: React.FC = () => {
 
     useEffect(() => {
         fetchPosts()
-    })
+    }, [posts])
 
     return (
         <div className="entireCatalogo">
